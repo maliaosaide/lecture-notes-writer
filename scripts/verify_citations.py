@@ -130,7 +130,7 @@ def main():
     print(f'\n=== 总结 ===', file=sys.stderr)
     print(f'共 {len(unique)} 个独立学术工作需人工分级', file=sys.stderr)
     print(f'建议：必做项用 grok-search 验证（每次 ~30-60 秒）', file=sys.stderr)
-    print(f'验证后按 references/citation-verification.md 的规则补充题外话', file=sys.stderr)
+    print(f'验证后按 citation-verification.md 的规则补充题外话', file=sys.stderr)
 
 
 if __name__ == '__main__':

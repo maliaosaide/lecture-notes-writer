@@ -12,7 +12,7 @@
 
 运行：
 ```bash
-python scripts/audit_notes.py <笔记.md> \
+python ${CLAUDE_PLUGIN_ROOT}/scripts/audit_notes.py <笔记.md> \
   --content-list <MinerU文件夹>/content_list.json \
   --lecturer <讲者姓名>
 ```
@@ -65,9 +65,9 @@ comm -23 /tmp/note_nums.txt /tmp/lecture_nums.txt
 
 ### 5b 图片-内容一致性审查
 
-运行 `scripts/verify_image_consistency.py`：
+运行 `${CLAUDE_PLUGIN_ROOT}/scripts/verify_image_consistency.py`：
 ```bash
-python scripts/verify_image_consistency.py <笔记.md> <content_list.json>
+python ${CLAUDE_PLUGIN_ROOT}/scripts/verify_image_consistency.py <笔记.md> <content_list.json>
 ```
 
 人工补充检查：
@@ -77,10 +77,10 @@ python scripts/verify_image_consistency.py <笔记.md> <content_list.json>
 
 ### 5c 完整性审查
 
-列出讲稿所有 heading（用 `scripts/extract_headings.py`），逐项对照笔记：
+列出讲稿所有 heading（用 `${CLAUDE_PLUGIN_ROOT}/scripts/extract_headings.py`），逐项对照笔记：
 
 ```bash
-python scripts/extract_headings.py <content_list.json> > /tmp/all_headings.txt
+python ${CLAUDE_PLUGIN_ROOT}/scripts/extract_headings.py <content_list.json> > /tmp/all_headings.txt
 ```
 
 每项标记：
@@ -111,7 +111,7 @@ python scripts/extract_headings.py <content_list.json> > /tmp/all_headings.txt
 
 ### 规则 3：冲突处理以讲稿为准
 
-讲稿 vs 录音冲突时，**以讲稿为准**。详见 `references/conflict-resolution.md`。
+讲稿 vs 录音冲突时，**以讲稿为准**。详见 `${CLAUDE_PLUGIN_ROOT}/references/conflict-resolution.md`。
 
 ### 规则 4：不确定的事实必须验证
 
@@ -130,7 +130,7 @@ python scripts/extract_headings.py <content_list.json> > /tmp/all_headings.txt
 - "报告指出"、"讲座中提及"、"团队提出"
 - Q&A 用 "**答**：" 替代 "**X 教授**："
 
-详见 `references/style-guide.md`。
+详见 `${CLAUDE_PLUGIN_ROOT}/references/style-guide.md`。
 
 ## 修正优先级
 

@@ -18,9 +18,9 @@
 
 ### 步骤 1：提取与分级
 
-运行 `scripts/verify_citations.py`：
+运行 `${CLAUDE_PLUGIN_ROOT}/scripts/verify_citations.py`：
 ```bash
-python scripts/verify_citations.py <笔记.md>
+python ${CLAUDE_PLUGIN_ROOT}/scripts/verify_citations.py <笔记.md>
 ```
 
 输出引用清单后，按以下规则**人工分级**：

@@ -1,0 +1,7 @@
+{
+  "name": "lecture-tools",
+  "version": "1.0.0",
+  "description": "讲座笔记工具集：lecture-notes-writer（单场讲座笔记：讲稿PDF+录音→笔记）+ lecture-synthesis-writer（多场讲座整合综述：N场资料→体现联系/关系/发展的总体笔记）。两个 skill 共享 PDF 处理、引用验证、图片审查等脚本与风格/冲突处理参考文档。",
+  "license": "MIT",
+  "keywords": ["lecture", "notes", "synthesis", "academic", "pdf", "mineru"]
+}

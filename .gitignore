@@ -1,39 +1,16 @@
-# 本地原始材料（不提交）
-*.pdf
-*.ppt
-*.pptx
-*.key
-*.mp3
-*.wav
-*.m4a
-*.mp4
-*.mov
-*.mkv
-*.srt
-
-# 录音转文字与会议纪要导出
-*录音转文字*
-*语音转文字*
-*转写*
-*逐字稿*
-*智能纪要*
-transcript*.txt
-transcript*.md
-
-# MinerU 转换产物
-**/full.md
-**/MinerU_markdown_*.md
-**/*_content_list.json
-**/*_origin.pdf
-**/images/
-
-# 生成笔记与页面截图
-**/笔记.md
-**/论文引用验证补充.md
-**/pdf_pages/
-
-# 本地临时文件
+# Python
 __pycache__/
-*.pyc
+*.py[cod]
+*.egg-info/
+
+# OS
 .DS_Store
 Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# 备份/临时
+.backup/
+*.bak
