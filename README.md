@@ -298,6 +298,7 @@ mindmap
 ```
 lecture-tools/                        ← 仓库根（plugin 项目）
 ├── .claude-plugin/plugin.json         ← plugin 清单
+├── .claude-plugin/marketplace.json    ← marketplace 清单（/plugin marketplace add 读取）
 ├── README.md  LICENSE  .gitignore
 ├── scripts/                           ← 【共享】7 个脚本
 ├── references/                        ← 【共享】style / conflict / citation
