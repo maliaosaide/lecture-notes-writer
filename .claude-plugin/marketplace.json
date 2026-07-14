@@ -1,0 +1,19 @@
+{
+  "name": "lecture-tools",
+  "id": "lecture-tools",
+  "owner": {
+    "name": "maliaosaide"
+  },
+  "metadata": {
+    "description": "讲座笔记工具集：单场讲座笔记 + 多场讲座整合综述",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "lecture-tools",
+      "source": "./",
+      "description": "lecture-notes-writer（单场讲座笔记）+ lecture-synthesis-writer（多场讲座整合综述）",
+      "version": "1.0.0"
+    }
+  ]
+}
