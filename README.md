@@ -245,25 +245,21 @@ mindmap
 
 ## 六、安装与启用
 
-本 plugin 通过本地 marketplace 加载。在 `~/.claude/settings.json` 配置：
+本 plugin 已发布为 GitHub marketplace（`maliaosaide/lecture-notes-writer`）。在 Claude Code 中依次执行两条命令完成安装：
 
-```json
-"extraKnownMarketplaces": {
-  "lecture-tools-local": {
-    "source": { "source": "directory", "path": "<本仓库绝对路径>" }
-  }
-},
-"enabledPlugins": { "lecture-tools@lecture-tools-local": true }
+```
+/plugin marketplace add maliaosaide/lecture-notes-writer
+/plugin install lecture-tools@lecture-tools
 ```
 
-重启 Claude Code 后，两个 skill 自动可被触发。验证：
+安装完成后（若提示则执行 `/reload-plugins`），两个 skill 自动可被触发。验证：
 
 ```
 我有讲稿 PDF 和录音，请整理成详细讲座笔记。        → 触发 lecture-notes-writer
 把这 10 场讲座整合成一份总体研究笔记。              → 触发 lecture-synthesis-writer
 ```
 
-> 注：marketplace 的 `path` 若含空格且 CC 不识别，可改用转义或 POSIX 风格路径。
+> 注：必须执行上述 `/plugin` 命令完成 marketplace 注册与插件安装；仅在 `settings.json` 里写 `enabledPlugins` 声明不会自动拉取与注册，skill 不会生效。
 
 ---
 
