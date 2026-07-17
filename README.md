@@ -365,6 +365,7 @@ lecture-tools/                        ← 仓库根（plugin 项目）
 - **共享资源提取**：7 个脚本 + 3 个参考文档（style/conflict/citation）提到 plugin 根，两 skill 用 `${CLAUDE_PLUGIN_ROOT}` 引用。
 - **新增 lecture-synthesis-writer**：七阶段流程（资料勘察→背景核实→并行精读→双轴框架→整合撰写→多轮核查→解读边界），解决多场讲座整合问题。
 - **路径可移植**：所有跨目录引用改用 `${CLAUDE_PLUGIN_ROOT}`，不再硬编码。
+- **mermaid timeline 换行规范**：`timeline` 不支持 `<br>` 换行（与 flowchart/mindmap 不同，`<br>` 会被字面显示并导致相邻节点文字互相遮挡）；多行内容须用**多事件语法**（同一时间点写多个 `: 子事件`，垂直堆叠成多行）。规则写入 `source-extraction-template.md`（生成）与 `audit-checklist.md`（核查）。
 
 #### v1.2.0（lecture-notes-writer 单 skill 末期）
 - 目录结构重组为三层（原始资料/笔记/temp）。
